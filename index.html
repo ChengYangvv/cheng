@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<style type="text/css">
+img{
+	width: 25px;
+	height: 25px;
+}
+</style>
+
+<title>时钟</title>
+
+<script type="text/javascript">
+function getImg(val) {
+	var len=val.length;
+	var images="";
+	for (var i = 0; i < len; i++) {
+		var num=val.substr(i,1);
+		
+		switch(num){
+			case '0' : 
+				images += "<img src='images/0.png' />";
+			break;
+
+			case '1' : 
+				images += "<img src='images/1.png' />";
+			break;
+
+			case '2': 
+				images += "<img src='images/2.png' />";
+			break;
+
+			case '3' : 
+				images += "<img src='images/3.png' />";
+			break;
+
+			case '4' : 
+				images += "<img src='images/4.png' />";
+			break;
+
+			case '5' : 
+				images += "<img src='images/5.png' />";
+			break;
+
+			case '6' : 
+				images += "<img src='images/6.png' />";
+			break;
+
+			case '7': 
+				images += "<img src='images/7.png' />";
+			break;
+
+			case '8': 
+				images += "<img src='images/8.png' />";
+			break;
+
+			case '9' : 
+				images += "<img src='images/9.png' />";
+			break;
+
+
+		}
+	}
+	return images;
+
+}
+
+function times() {
+	var dv=document.getElementById('m');
+	var date=new Date();
+	var year=date.getFullYear()+"";
+	var months=date.getMonth()+1;
+	months=months<10?'0'+months:months+"";
+	var day =date.getDate();
+	day=day<10?'0'+day:day+"";
+	var hours=date.getHours();
+	hours=hours<10?'0'+hours:hours+"";
+	var minutes=date.getMinutes();
+	minutes=minutes<10?'0'+minutes:minutes+"";
+	var seconds=date.getSeconds();
+	seconds=seconds<10?'0'+seconds:seconds+"";
+	dv.innerHTML = getImg(year)+'年'+ getImg(months)+'月'+getImg(day)+'日' + getImg(hours)+'时'+ getImg(minutes)+'分'+ getImg(seconds)+'秒';
+
+}
+
+
+var interval=0;
+function autoadd(){
+	//clearInterval(interval);
+	interval=setInterval("times()",1000);
+}
+</script>
+
+</head>
+<body onLoad="autoadd()">
+<center><br><br><br><br><br>
+<div id="m"></div>
+</center>
+
+</body>
+</html>
+
