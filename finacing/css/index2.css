@@ -1,0 +1,645 @@
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,div,dl,dt,dd{
+    margin:0;
+    padding:0;
+    border:0;
+}
+body{
+    background: #f2f2f2;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration:none;
+    color: #000;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+/**顶部**/
+.finacing-head{
+    width:100%;
+    height:70px;
+}
+div.finacing-box{
+    width:980px;
+    height:100%;
+    margin:0 auto;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+}
+div.finacing-box div.finacing-logo{
+    width:320px;
+    height:100%;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+}
+div.finacing-box div.finacing-logo p:nth-child(1){
+    width:50%;
+    height:100%;
+}
+div.finacing-box div.finacing-logo p:nth-child(2){
+    width:48%;
+    height:40px;
+    border-left: 2px solid #B5B5B5;
+}
+div.finacing-box div.finacing-logo p span{
+    width:45%;
+    color:#B5B5B5;
+    line-height: 40px;
+    font-size: 14px;
+    margin-left: 5px;
+}
+div.finacing-box div.finacing-logo p span:hover{
+    text-decoration: underline;
+}
+div.finacing-box div.finacing-tel{
+    width: 300px;
+    height:37px;
+    background: #E5E9E9;
+    border-radius: 30px;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: space-around;
+    -webkit-justify-content: space-around;
+}
+div.finacing-box div.finacing-tel b{
+    display: block;
+    width:22px;
+    height: 22px;
+    background: url(../images/dianhua1.png);
+    margin-left: 30px;
+}
+div.finacing-box div.finacing-tel p{
+    color:#AFB1B1;
+    font-size: 16px;
+}
+div.finacing-box div.finacing-tel i{
+    font-size: 16px;
+    display: block;
+    font-weight: bold;
+    color:#D22626;
+    margin-right: 30px;
+}
+
+
+/**header**/
+header{
+    width:100%;
+    height: 43px;
+    background: #D22626;
+}
+header div.finacing-header{
+    width:980px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    display:-webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: space-between;
+    -webkit-justify-content:space-between;
+}
+header ul.list-1{
+    width: 770px;
+    height: 43px;
+    display: flex;
+    display: -webkit-flex;
+}
+header ul.list-1 li{
+    width:94px;
+    height: 100%;
+    border-left: 1px solid #C81E1E;
+}
+header ul.list-1 li:nth-child(8){
+    border-right: 1px solid #C81E1E;
+}
+header ul.list-1 li:nth-child(2){
+    margin: 0;
+}
+header ul.list-1 li:nth-child(8) a{
+    border-right: 1px solid #DF2F2F;
+}
+header ul.list-1 li a{
+    width:94px;
+    height: 100%;
+    border-left: 1px solid #DF2F2F;
+    color:#F2F2F2;
+    display: flex;
+    display:-webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    font-size: 16px;
+}
+header ul.list-1 li a:hover{
+    background:#B70000;
+    color:#fff;
+}
+form{
+    width:175px;
+    height:25px;
+    position: relative;
+}
+form input{
+    width:175px;
+    outline: none;
+    border-radius: 30px;
+    border: none;
+    height: 23px;
+}
+form u{
+    display: block;
+    width:40px;
+    height:25px;
+    background: #B70000;
+    position: absolute;
+    right: -2px;
+    top:0;
+    border-radius: 30px;
+}
+form b{
+    display: block;
+    width:20px;
+    height:25px;
+    background: #B70000;
+    position: absolute;
+    right: 20px;
+    top:0;
+}
+form span{
+    display: block;
+    width:20px;
+    height:20px;
+    background: url(../images/sousuo2.png);
+    position: absolute;
+    right: 12px;
+    top:2px;
+}
+
+div.boxSction{
+    width: 980px;
+    height: 633px;
+    margin: 0 auto;
+    position: relative;
+}
+div.detailSction{
+    width: 980px;
+    height: 823px;
+    margin: 0 auto;
+    position: relative;
+}
+div.aboutSction{
+    width: 980px;
+    height: 633px;
+    margin: 0 auto;
+    position: relative;
+}
+div.productSction{
+    width: 980px;
+    height: 683px;
+    margin: 0 auto;
+    position: relative;
+}
+section{
+    width: 980px;
+    height: 633px;
+    top:-50px;
+    display: flex;
+    position: absolute;
+    background: url(../images/partnerssection.png);
+}
+section.detail{
+    height: 823px;
+    background: url(../images/detailsection.png);
+}
+section.about{
+    height: 633px;
+    width:980px;
+    background: url(../images/about_section.png) center right no-repeat;
+}
+section.message{
+    background: url(../images/message.png);
+}
+section.news{
+    background: url(../images/newsection.png);
+}
+section.product{
+    height: 683px;
+    width:980px;
+    background: url(../images/productsection.png) center right no-repeat;
+}
+section .sectionLeft{
+    width: 256px;
+}
+section .sectionLeft dl{
+    width: 237px;
+    margin-top: 10px;
+}
+section .sectionLeft dl.about{
+    margin-top: 0px;
+}
+section ol.partnersUl{
+    display: flex;
+    height: 426px;
+    justify-content: space-between;
+    margin-top:150px;
+    margin-left: 20px;
+    flex-flow: column wrap;
+}
+section .sectionLeft dt{
+    color:#841212;
+    font-size: 15px;
+    height: 42px;
+    line-height: 42px;
+    text-align: right;
+}
+section .sectionLeft dt.about{
+    line-height: 40px;
+}
+section .sectionLeft dt::after{
+    content: ' 在线留言';
+    color:floralwhite;
+    font-size: 18px;
+}
+section .sectionLeft dt.news::after{
+    content: ' 新闻中心';
+}
+section .sectionLeft dt.partners::after{
+    content: ' 合作伙伴';
+}
+section .sectionLeft dt.about::after{
+    content: ' 关于我们';
+}
+section .detailTitle{
+    width: 648px;
+    height: 64px;
+    margin-top:90px;
+    text-align: center;
+}
+section .detailTitle h1{
+    font-size: 18px;
+    margin:5px;
+    color: #454545;
+}
+section .detailTitle label{
+    font-size: 12px;
+}
+section .sectionLeft dd{
+    font-size: 15px;
+    height: 46px;
+    line-height: 46px;
+    text-align: right;
+}
+section .sectionRight p{
+    font-size: 14px;
+    color: #454545;
+    line-height: 30px;
+    margin-top: 20px;
+    margin-left: 25px;
+}
+section .sectionLeft ul{
+    margin-top: 30px;
+    width: 155px;
+    margin-left: 100px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+}
+section .sectionLeft ul li{
+    font-size: 16px;
+    height: 50px;
+    color: floralwhite;
+    margin:20px 0 0 10px;
+}
+section .sectionLeft ul li:first-child::after{
+    content: '\A 0551-8208335';
+    white-space:pre;
+    font-size: 12px;
+}
+section .sectionLeft ul li:nth-child(2)::after{
+    content: '\A 提供专业融资租赁业务';
+    white-space:pre;
+    font-size: 12px;
+}
+section .sectionLeft ul li:last-child::after{
+    content: '\A 中国 北京';
+    white-space:pre;
+    font-size: 12px;
+}
+section .sectionLeft ul li.about::after{
+    content: '\A 融资租赁 | 售后回租\A厂商租赁 | 经营性租赁';
+}
+section .sectionRight{
+    width: 684px;
+    margin-left: 10px;
+}
+section .sectionRight p{
+    
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    margin-right: 15px;
+}
+section .sectionTop{
+    width: 238px;
+    height: 52px;
+    float: right;
+    line-height: 52px;
+    font-size: 12px;
+    text-align: right;
+    background: url(../images/主页.png) center left no-repeat;
+}
+section .sectionTop::after{
+    content: ' 成功案例';
+    color: #898989;
+}
+section .sectionMiddle{
+    margin-left: 36px;
+    margin-top: 80px;
+    display: flex;
+}
+section .slogan h1{
+    font-size: 15px;
+    color:#e44141;
+    margin-top:20px;
+}
+section .slogan h1::after{
+    content: '\A 2014-06-30';
+    white-space:pre;
+    font-size: 12px;
+    color:#898989;
+}
+section .slogan h4{
+    font-size: 12px;
+    color:#898989;
+    margin-top:20px;
+}
+section .messageTitle{
+    width:684px;
+    height: 60px;
+    margin-top: 80px;
+    margin-left: 20px;
+    line-height: 50px;
+}
+section .messageTitle b{
+    color:#b70000;
+}
+section .info{
+    margin:10px;
+    display: flex;
+    align-items: flex-start;
+}
+section span{
+    margin:10px;
+}
+section input{
+    height: 30px;
+}
+section b{
+    color: #d12626;
+    margin: 10px;
+}
+section input.first{
+    width: 116px; 
+}
+section input.seconde{
+    width: 208px; 
+}
+section input.four{
+    width: 80px;
+    margin-left: 15px;
+}
+section input.threed{
+    width: 454px;
+    height: 174px; 
+}
+section .messageBt{
+    width: 104px;
+    height: 42px;
+    background: #d83c40;
+    border-color: #841212;
+    color:#ffffff;
+    font-size: 14px;
+    margin-left: 92px;
+    margin-top: 10px;
+}
+section .sectionRight ul{
+    display: flex;
+    height: 178px;
+    width:93%;
+    flex-flow: column wrap;
+    margin-left: 28px;
+    justify-content: space-around;
+    margin-top:30px;
+}
+section .sectionRight ul:nth-child(4){
+    margin-top:0px;
+}
+section .sectionRight ul li{
+    display: flex;
+    justify-content: space-between;
+}
+section .sectionRight ul li h6{
+    font-size: 14px;
+    font-weight: normal;
+}
+section .sectionRight ul li h4{
+    color:#898989;
+    font-size: 12px;
+}
+section .button{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    align-items: center;
+}
+section div.button a{
+    width: 60px;
+    height: 30px;
+    background: #f2f2f2;
+    text-align: center;
+    line-height: 30px;
+    margin:5px;
+    border-radius:5px;
+    font-size: 14px; 
+}
+section div.button a:hover{
+    background: #D3D6D9;
+}
+section div.button a:nth-child(3){
+    width: 30px;
+    height: 30px;
+}
+section div.button a:nth-child(4){
+    width: 30px;
+    height: 30px;
+}
+section div.button a:nth-child(5){
+    width: 30px;
+    height: 30px;
+}
+
+/**footer**/
+footer{
+    width:100%;
+    height: 60px;
+    background: #D3D6D9;
+}
+.footer-center{
+    margin: 0 auto;
+    width:980px;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    align-items: center;
+    -webkit-align-items: center;
+    height: 60px;
+}
+.footer-center div{
+    height: 23px;
+}
+.footer-center div a{
+    font-size: 14px;
+    color:#595A5A;
+}
+.footer-center div.copyright{
+    font-size: 14px;
+    color:#989797;
+}
+/* 以下为product页面 */
+div.productSectionLeft{
+    width: 237px;
+    height: 574px;
+}
+div.productSectionLeft .productDl>dt{
+    color:#841212;
+    font-size: 15px;
+    height: 42px;
+    line-height: 42px;
+    text-align: right;
+
+}
+div.productSectionLeft .productDl>dt::after{
+    content: ' 租赁产品';
+    color:floralwhite;
+    font-size: 18px;
+}
+div.productSectionLeft .productDl>dd{
+    font-size: 15px;
+    height: 48px;
+    line-height: 44px;
+    text-align: right;
+}
+div.productSectionLeft .productDl>dd:nth-child(3){
+    margin-top: 98px;
+}
+div.productSectionLeft .productDl>dd li{
+    height: 32px;
+    font-size: 12px;
+    color: #8d8d8d;
+    margin-right: 5px;
+    line-height: 50px;
+}
+div.productSectionLeft .productUl{
+    margin:42px 0 0 108px;
+}
+div.productSectionLeft .productUl li{
+    height: 66px;
+    font-size: 16px;
+    color: floralwhite;
+}
+div.productSectionLeft .productUl li::after{
+    content: '\A 0551-8208335';
+    white-space:pre;
+    font-size: 12px;
+}
+div.productSectionLeft .productUl li:last-child::after{
+    content: '\A 融资租赁 | 售后回租\A厂商租赁 | 经营性租赁';
+}
+div.sectionRight .sectionBottom{
+    width: 684px;
+    height: 519px;
+    box-sizing: border-box;
+    margin: 54px 0 0 24px;
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+}
+div.sectionRight .sectionBottom div{
+    width: 340px;
+    height: 260px;
+    
+}
+div.sectionRight .sectionBottom div h2{
+    font-size: 20px;
+    font-family: '微软雅黑';
+    color: #4e3dd1;
+    margin-left: 67px;
+    margin-top: 70px;
+}
+div.sectionRight .sectionBottom div:nth-child(2) h2{
+    color: #f32323;
+    margin-left: 164px;
+}
+div.sectionRight .sectionBottom div:nth-child(2) h4{
+    margin-left: 164px;
+}
+div.sectionRight .sectionBottom div:nth-child(2) a{
+    margin-left: 164px;
+}
+div.sectionRight .sectionBottom div:nth-child(3) h2{
+    color: #e99510;
+}
+div.sectionRight .sectionBottom div:nth-child(4) h2{
+    color: #16ce2b;
+    margin-left: 164px;
+}
+div.sectionRight .sectionBottom div:nth-child(4) h4{
+    margin-left: 164px;
+}
+div.sectionRight .sectionBottom div:nth-child(4) a{
+    margin-left: 164px;
+}
+div.sectionRight .sectionBottom div h4{
+    font-size: 12px;
+    color: #4c4c4c;
+    margin-left: 67px;
+    margin-top: 10px;
+}
+div.sectionRight .sectionBottom div a{
+    font-size: 12px;
+    color: #cacaca;
+    margin-left: 67px;
+    margin-top: 10px;
+}
+div.sectionRight .sectionBottom div.position{
+    position: absolute;
+    text-align: center;
+    top: 208px;
+    left: 182px;
+}
+div.sectionRight .sectionBottom div.position h1{
+    font-size: 24px;
+    color: #4c4c4c;
+}
+div.sectionRight .sectionBottom div.position h6{
+    font-size: 12px;
+    color: #a5a7a8;
+}
