@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>首页</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/index1.css">
+
+  <style type="text/css">
+
+*{margin:0;padding:0;list-style-type:none;}
+
+a,img{border:0;}
+
+body{font:12px/180% Arial, Helvetica, sans-serif, "新宋体";}
+
+
+
+/* flexslider */
+
+.flexslider{position:relative;width:100%;height:600px;overflow:hidden;background:url(images/loading.gif) 50% no-repeat;width:100%;}
+
+.slides{position:relative;z-index:1;}
+
+.slides li{height:600px;}
+
+.flex-control-nav{position:absolute;bottom:240px;z-index:2;width:100%;text-align:center;}
+
+.flex-control-nav li{display:inline-block;width:14px;height:14px;margin:0 5px;*display:inline;zoom:1;}
+
+.flex-control-nav a{display:inline-block;width:14px;height:14px;line-height:40px;overflow:hidden;background:url(images/dot.png) right 0 no-repeat;cursor:pointer;}
+
+.flex-control-nav .flex-active{background-position:0 0;}
+
+
+
+.flex-direction-nav{position:absolute;z-index:3;width:100%;top:45%;}
+
+.flex-direction-nav li a{display:block;width:50px;height:50px;overflow:hidden;cursor:pointer;position:absolute;}
+
+.flex-direction-nav li a.flex-prev{left:40px;background:url(images/prev.png) center center no-repeat;}
+
+.flex-direction-nav li a.flex-next{right:40px;background:url(images/next.png) center center no-repeat;}
+
+</style>
+ </head>
+ <body>
+
+<!--顶部-->
+	<div class="finacing-head">
+		<div class="finacing-box">
+			<div class="finacing-logo">
+				<p><img src="images/f-logo3.png"></p>
+				<p><span>专业的服务平台</span></p>
+			</div>
+			<div class="finacing-tel">
+				<b></b>
+				<p>咨询热线</p>
+				<i>0000-12345678</i>
+			</div>
+		</div>
+	</div>
+
+
+<!--header-->
+   <header>
+		<div class="finacing-header">
+			<ul class="list-1">
+				<li><a href="index1.html">首页</a></li>
+				<li><a href="about.html">关于我们</a></li>
+				<li><a href="products.html">租赁产品</a></li>
+				<li><a href="news.html">新闻中心</a></li>
+				<li><a href="partner.html">合作伙伴</a></li>
+				<li><a href="detail.html">招贤纳士</a></li>
+				<li><a href="message.html">在线申请</a></li>
+				<li><a href="">联系我们</a></li>
+			</ul>
+			<form>
+				<input type="text" name="" value="  ">
+				<u></u>
+				<b></b>
+				<span></span>
+			</form>
+		</div>
+   </header>
+
+
+  <!--banner-->
+  <div class="finacing-banner">
+
+<div class="flexslider">
+
+  <ul class="slides">
+
+    <li style="background:url(images/11_01.png) 50% 0 no-repeat;"></li>
+
+    <li style="background:url(images/11_02.png) 50% 0 no-repeat;"></li>
+
+    <li style="background:url(images/11_03.png) 50% 0 no-repeat;"></li>
+
+    <li style="background:url(images/11_04.png) 50% 0 no-repeat;"></li>
+
+    <li style="background:url(images/11_05.png) 50% 0 no-repeat;"></li>
+
+  </ul>
+</div>
+
+
+
+
+
+
+
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+
+<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+  $('.flexslider').flexslider({
+
+    directionNav: true,
+
+    pauseOnAction: false
+
+  });
+
+});
+
+</script>
+
+<script src="http://www.jq22.com/js/jq.js"></script>
+
+
+  	</div>
+  </div>
+  <!--section-->
+  <section>
+  		<div class="about">
+  			<div class="about-us">
+  				<div class="building">
+  					<h4>走进企业<span>About us</span></h4>
+  					<p>+更多</p>
+  				</div>
+  				<div class="building-iconfont"><img src="images/1_03.gif"></div>
+  				<p class="service">成立于 2014 年 8 月，业务包含融资租赁业务、租赁业务、租赁资产的残值处理以及维修及租赁交易咨询和担保等业务...</p>
+  			</div>
+  			<div class="news">
+  				<div class="news-center">
+  					<h4>新闻中心<span>News</span></h4>
+  					<p>+更多</p>
+  				</div>
+  				<div class="news-iconfont">
+              <img src="images/1_03.gif">
+              <p>市领导参加我司关于融资发展议</p>
+          </div>
+  				<p class="industry-1"><b></b><span>【公司新闻】 </span>融资租赁" 大跃进 "资金链承压风险...</p>
+  				<p class="industry-2"><b></b><span>【行业动态】</span>打造飞机租赁总部集聚区</p>
+  				<p class="industry-3"><b></b><span>【行业动态】</span>企业进行员工培训</p>
+  			</div>
+  			<div class="products">
+  				<div class="lease">
+  					<h4>经营产品<span>Products</span></h4>
+  					<p>+更多</p>
+  				</div>
+  				<div class="lease-iconfont"><img src="images/1_03.gif"></div>
+  				<h5>融资租赁</h5>
+  				<p class="lease-bottom">专业满足各类机构置办有形动产所需的中长期融资精细化实施资金的投放和回笼</p>
+  			</div>
+  		</div>
+
+  		<div class="cooperating-agency">
+  			<a href=""><p>合作机构</p><b></b><u></u></a>
+  			<a href=""><img src="images/2_03.gif"></a>
+  			<a href=""><img src="images/2_05.gif"></a>
+  			<a href=""><img src="images/2_1.gif"></a>
+  			<a href=""><img src="images/2_08.gif"></a>
+  			<a href=""><img src="images/2_11.gif"></a>
+  		</div>
+
+
+  	<div class="list-center">
+  		<div class="list-left">
+  		<ul class="about-list">
+  			<li><span>关于我们</span></li>
+  			<li><a href="">企业简介</a></li>
+  			<li><a href="">企业文化</a></li>
+  			<li><a href="">组织架构</a></li>
+  			<li><a href="">资质荣誉</a></li>
+  		</ul>
+  		<ul class="products-list">
+  			<li><span>租赁产品</span></li>
+  			<li><a href="">融资租赁</a></li>
+  			<li><a href="">经营性租赁</a></li>
+  			<li><a href="">业务领域</a></li>
+  			<li><a href="">业务流程</a></li>
+  		</ul>
+  		<ul class="news-list">
+  			<li><span>新闻中心</span></li>
+  			<li><a href="">公司新闻</a></li>
+  			<li><a href="">行业动态</a></li>
+  			<li><a href="">视频播放</a></li>
+  		</ul>
+  		<ul class="friends-list">
+  			<li><span>合作伙伴</span></li>
+  			<li><a href="">合作理念</a></li>
+  		</ul>
+  		<ul class="recruiter-list">
+  			<li><span>招贤纳士</span></li>
+  			<li><a href="">在线招聘</a></li>
+  			<li><a href="">人才战略</a></li>
+  			<li><a href="">培训理念</a></li>
+  		</ul>
+  		<ul class="apply-for-list">
+  			<li><span>在线申请</span></li>
+  			<li><a href="">在线申请</a></li>
+  		</ul>
+  	</div>
+
+
+
+      <div class="list-right">
+        <div class="share">
+          <div class="list-tel">
+              <b></b><p>Tel 0000-1234567</p>
+          </div>
+           <div class="e-mail">
+              <b></b><p>E-Mail.abc@163.com</p>
+          </div>
+           <div class="place">
+              <b></b><p>Ad.中国 北京</p>
+          </div>
+          <div class="QQ">
+              <a href=""></a>
+              <a href=""></a>
+              <a href=""></a>
+              <a href=""></a>
+          </div>
+        </div>
+        <div class="erweima">
+            <a href="">二维码</a>
+            <p>官方微信二维码</p>
+        </div>
+        <div class="map"></div>
+      </div>
+    </div>
+  </section>
+
+
+
+<!--footer-->
+	<footer>
+		<div class="footer-center">
+			<div class="footer-link">
+				<a href="">友情链接：百度 新浪 阿里巴巴 网易</a>
+			</div>
+			<div class="copyright">Copyright 这里是版权信息 这里是版权信息</div>
+		</div>
+	</footer>
+ </body>
+</html>
